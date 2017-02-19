@@ -1,0 +1,358 @@
+<%@ Page Language="C#" %>
+    <%@ Import namespace="System"%>
+        <%@ Import namespace="System.IO"%>
+            <%@ Import namespace="System.Net"%>
+                <%@ Import namespace="System.Net.Mail"%>
+                    <%@ Import namespace="System.Web.UI.WebControls"%>
+
+                        <!doctype html>
+                        <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+                        <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+                        <!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+                        <!--[if gt IE 8]><!-->
+                        <html class="no-js" lang="">
+                        <!--<![endif]-->
+
+                        <head>
+                            <meta charset="utf-8">
+                            <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+                            <title>EFT Corporation - Participation</title>
+                            <meta name="description" content="">
+                            <meta name="viewport" content="width=device-width, initial-scale=1">
+                            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+                            <link rel="stylesheet" href="css/main.css">
+                            <link rel="shortcut icon" href="img/favicon.ico" />
+                            <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+                            <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+                            <script>
+                                (function (i, s, o, g, r, a, m) {
+                                    i['GoogleAnalyticsObject'] = r;
+                                    i[r] = i[r] || function () {
+                                        (i[r].q = i[r].q || []).push(arguments)
+                                    }, i[r].l = 1 * new Date();
+                                    a = s.createElement(o),
+                                        m = s.getElementsByTagName(o)[0];
+                                    a.async = 1;
+                                    a.src = g;
+                                    m.parentNode.insertBefore(a, m)
+                                })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+                                ga('create', 'UA-55493923-32', 'auto');
+                                ga('send', 'pageview');
+                            </script>
+                        </head>
+
+                        <body>
+                            <form runat="server" id="form1">
+                                <div class="top">
+                                    <div class="header">
+                                        <a href="index.htm"><img class="center-block img-responsive" src="img/logo-long.png" alt="logo" /></a>
+                                    </div>
+                                    <div class="banner">
+                                        <a href="index.htm"><img class="center-block img-responsive" src="img/banner_africa.jpg" alt="Africa" /></a>
+                                        <h2><strong>EFT Corporation Conference 2017</strong></h2>
+                                    </div>
+                                </div>
+                                <div class="promo">
+                                    <div class="container-fluid text-center frame">
+                                        <div class="col-sm-4">
+                                            <img class="center-block img-responsive" src="img/theme-icon.png" alt="Theme" />
+                                            <h4>Theme</h4>
+                                            <p id="upper-text">
+                                                Shaping the African
+                                                <br /> Payments Landscape
+                                            </p>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <img class="center-block img-responsive" src="img/date-icon.png" alt="Theme" />
+                                            <h4>Date</h4>
+                                            <p id="upper-text">
+                                                Wednesday 29th - Friday
+                                                <br /> 31st March 2017
+                                            </p>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <img class="center-block img-responsive" src="img/venue-icon.png" alt="Theme" />
+                                            <h4>Venue</h4>
+                                            <p id="upper-text">
+                                                <a href="http://wetu.com/iBrochure/en/Launch/8842_17760/Victoria_Falls_Safari_Lodge/Landing">Victoria Falls
+                                                <br/> Safari Lodge</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="prizes text-center">
+                                    <div class="row bg-white">
+                                        <div class="grand narrow">
+                                            <h2>Participation Information</h2>
+                                        </div>
+                                        <div class="promo">
+                                            <div class="container-fluid text-center frame participation">
+                                                <div class="column">
+                                                    <p>Please confirm your attendance to the above mentioned event by completing this form clearly, attaching a copy of your ID or passport for your air travel and emailing or submitting it online no later than 21/02/2017 to <a href="mailto:conference2017@eftcorp.co.zw">conference2017@eftcorp.co.zw</a>.</p>
+                                                </div>
+                                                <div class="grey">
+                                                    <div class="column">
+                                                        <p>
+                                                            Your accommodation, travel, transfers and meals have been sponsored in full by our Partners. Our Travel Company will be on standby to assist you with your air travel bookings.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <h4>SCHEDULE</h4>
+                                                <div class="col-sm-4 left">
+                                                    <p id="upper-text">
+                                                        Wednesday 29th March
+                                                        <br /> 14:00 - 17:00 Half-day conference
+                                                        <br /> 18:00 - Welcome reception and dinner
+                                                    </p>
+                                                </div>
+                                                <div class="col-sm-4 middle">
+                                                    <p id="upper-text">
+                                                        Thursday 30th March
+                                                        <br /> 08:30 - 17:30 All day conference
+                                                        <br /> 19:00 - Group dinner
+                                                    </p>
+                                                </div>
+                                                <div class="col-sm-4 right">
+                                                    <p id="upper-text">
+                                                        Friday 31st March
+                                                        <br /> 08:30 - 11:00 Half-day conference
+                                                        <br /> All day departures
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="container-fluid text-center frame participation">
+                                            <div class="tabs">
+                                                <input type="radio" name="tabs" id="tabone" checked="checked">
+                                                <label for="tabone">PERSONAL INFORMATION</label>
+                                                <div class="tab">
+                                                    <div class="line">
+                                                        <input type="text" name="title" placeholder="Title">
+                                                    </div>
+                                                    <div class="line">
+                                                        <input type="text" name="firstname" placeholder="First Name">
+                                                    </div>
+                                                    <div class="line">
+                                                        <input type="text" name="lastname" placeholder="Last Name">
+                                                    </div>
+                                                    <div class="line">
+                                                        <input type="text" name="address" placeholder="Contact Address">
+                                                    </div>
+                                                    <div class="line">
+                                                        <input type="text" name="phone" placeholder="Phone">
+                                                    </div>
+                                                    <div class="line">
+                                                        <input type="text" name="mobilenumber" placeholder="Mobile Telephone Number">
+                                                    </div>
+                                                    <div class="line">
+                                                        <input type="text" name="emailaddress" placeholder="Email Address">
+                                                    </div>
+                                                    <div class="line">
+                                                        <div class="col-sm-6">
+                                                            <input type="radio" value="Yes" id="radioYes" name="willattend" checked />
+                                                            <label for="radioYes" class="radio" chec>Yes, I will be attending the Conference</label>
+                                                        </div>
+                                                        <div class="col-sm-6">
+                                                            <input type="radio" value="No" id="radioNo" name="willattend" />
+                                                            <label for="radioNo" class="radio">No, I will not be attending the Conference</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="line">
+                                                        <p>&nbsp;</p>
+                                                    </div>
+                                                    <div class="line dropd">
+                                                        <span><strong>Golf T-shirt Sizes</strong></span>
+                                                        <br/>
+                                                        <div class="col-sm-6">
+                                                            <select name="ladiesSizes" id="ladiesSizes">
+                                                                <option selected="selected" value="">Ladies</option>
+                                                                <option value="small">Small</option>
+                                                                <option value="medium">Medium</option>
+                                                                <option value="large">Large</option>
+                                                                <option value="xtra large">Xtra Large</option>
+                                                                <option value="xxl">XXL</option>
+                                                                <option value="xxxl">XXXL</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-sm-6">
+                                                            <select name="mensSizes" id="mensSizes">
+                                                                <option selected="selected" value="">Men</option>
+                                                                <option value="small">Small</option>
+                                                                <option value="medium">Medium</option>
+                                                                <option value="large">Large</option>
+                                                                <option value="xtra large">Xtra Large</option>
+                                                                <option value="xxl">XXL</option>
+                                                                <option value="xxxl">XXXL</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="line">
+                                                        <p>&nbsp;</p>
+                                                    </div>
+                                                    <div class="line">
+                                                        <span><strong>Special Needs</strong></span>
+                                                        <br/>
+                                                        <span>Please let us know if you have any special needs, such as dietary restrictions or allergies</span>
+                                                        <textarea type="text" name="specialneeds" size="50" rows="6"></textarea>
+                                                    </div>
+                                                    <br>
+                                                    <div class="line submit">
+                                                        <input type="radio" name="tabs">
+                                                        <label for="tabtwo">NEXT</label>
+                                                    </div>
+                                                    <br>
+                                                </div>
+                                                <input type="radio" name="tabs" id="tabtwo">
+                                                <label for="tabtwo">ACCOMMODATION</label>
+                                                <div class="tab">
+
+                                                    <div class="line">
+                                                        <p>Accommodation will be reserved according to your travel itinerary at the Victoria Falls Safari Lodge, where the conference is being held. Details of this will be sent to you closer to the event. Select the day you are attending</p>
+                                                    </div>
+                                                    <div class="line">
+                                                        <div class="col-sm-4">
+                                                            <input type="radio" value="Monday" id="radioMonday" name="accomodation" checked />
+                                                            <label for="radioMonday" class="radio" chec>Monday</label>
+                                                        </div>
+                                                        <div class="col-sm-4">
+                                                            <input type="radio" value="Tuesday" id="radioTuesday" name="accomodation" />
+                                                            <label for="radioTuesday" class="radio">Tuesday</label>
+                                                        </div>
+                                                        <div class="col-sm-4">
+                                                            <input type="radio" value="Wednesday" id="radioWednesday" name="accomodation" />
+                                                            <label for="radioWednesday" class="radio">Wednesday</label>
+                                                        </div>
+                                                        <br />
+                                                        <br />
+                                                    </div>
+                                                    <br>
+                                                    <div class="line submit">
+                                                        <input type="radio" name="tabs">
+                                                        <label for="tabthree">NEXT</label>
+                                                    </div>
+                                                    <br>
+                                                </div>
+                                                <input type="radio" name="tabs" id="tabthree">
+                                                <label for="tabthree">TRAVEL REQUIREMENTS</label>
+                                                <div class="tab">
+                                                    <div class="line">
+                                                        <p>Our travel company will arrange your air travel. Please complete the information below and scan and attach a copy of your passport when returning the information. We will send you a suggested schedule to review.</p>
+                                                    </div>
+                                                    <div class="line">
+                                                        <p>&nbsp;</p>
+                                                    </div>
+                                                    <div class="line">
+                                                        <span><strong>To Victoria Falls<br/>
+                            Please indicate preferred point of departure and the earliest time at which you can check in at your local airport:</strong></span>
+                                                        <input type="text" name="placeofdeparture" placeholder="Place of depature">
+                                                    </div>
+                                                    <div class="line">
+                                                        <input type="text" name="pefereredairlineorflightnum" placeholder="Preferred airline or flight number (if known)">
+                                                    </div>
+                                                    <div class="line">
+                                                        <input type="text" name="nameonpassport" placeholder="Name as on passport">
+                                                    </div>
+                                                    <div class="line">
+                                                        <input type="text" name="passportnumber" placeholder="Passport number">
+                                                    </div>
+                                                    <div class="line">
+                                                        <p>&nbsp;</p>
+                                                    </div>
+                                                    <div class="line">
+                                                        <span><strong>From Victoria Falls</strong></span>
+                                                        <input type="text" name="returndestination" placeholder="Return destination">
+                                                    </div>
+                                                    <div class="line">
+                                                        <input type="text" name="pefereredairlineorflightnumfromvicfalls" placeholder="Preferred airline or flight number (if known)">
+                                                    </div>
+                                                    <div class="line">
+                                                        <input type="text" name="frequentflyermembershipnumber" placeholder="Frequent flyer membership number">
+                                                    </div>
+                                                    <div class="line">
+                                                        <input type="text" name="nationality" placeholder="Nationality">
+                                                    </div>
+                                                    <div class="line">
+                                                        <p>&nbsp;</p>
+                                                    </div>
+                                                    <div class="line">
+                                                        <span><strong>Any other special travel requirements </strong></span>
+                                                        <textarea type="text" name="otherspecialrequirements" size="50" rows="6"></textarea>
+                                                    </div>
+                                                    <br>
+                                                    <div class="line submit">
+                                                        <asp:Button runat="server" Text="submit" OnClick="SubmitForm" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="instant">
+                                            <h2>Event Information</h2>
+                                            <a href="events.html" class="btn">Click Here</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="footer text-center">
+                                    <div class="container-fluid">
+                                        <div class="left">
+                                            <a class="facebook" href="https://www.facebook.com/eftcorpltd/?fref=ts"></a>
+                                            <a class="linkedin" href="https://www.linkedin.com/company-beta/3072222/"></a>
+                                        </div>
+                                        <div class="right">
+                                            <a href="http://www.eftevents.com/">www.eftcorp.com</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </body>
+
+                        </html>
+                        <script runat="server" language="c#">
+                            static List < string > ignoreKeys = new List < string > () {
+                                "__VIEWSTATE",
+                                "__VIEWSTATEGENERATOR",
+                                "__EVENTVALIDATION",
+                                "tabs",
+                                "ctl00"
+                            };
+
+                            protected void SubmitForm(object sender, EventArgs e) {
+                                if (!Page.IsValid) {
+                                    //TODO: Validation?
+                                    return;
+                                }
+
+                                // get formatted string of the form values
+                                StringBuilder data = new StringBuilder();
+                                foreach(string key in Request.Form.Keys) {
+                                    // ignore
+                                    if (ignoreKeys.Contains(key))
+                                        continue;
+
+                                    var value = Request.Form[key];
+                                    data.Append(string.Format("{0}: {1}", key, value));
+                                    data.AppendLine();
+                                }
+
+                                // save text file
+                                try {
+                                    string filePath = string.Concat(Server.MapPath("/data"), string.Format("/form_{0}_{1}.txt",
+                                        DateTime.Now.ToString("yyyy-MM-dd_hh.mm.ss"),
+                                        Guid.NewGuid()));
+                                    using(StreamWriter writer = new StreamWriter(filePath)) {
+                                        writer.Write(data.ToString());
+                                        writer.Flush();
+                                        writer.Close();
+                                    }
+                                } catch {}
+
+                                // send email
+                                try {
+                                    MailMessage msg = new MailMessage("hello@c2.co.zw", "conference2017@eftcorp.co.zw", "EFT Corp Conference 2017", data.ToString());
+                                    SmtpClient smtp = new SmtpClient("smtp.mandrillapp.com", 587);
+                                    smtp.UseDefaultCredentials = false;
+                                    smtp.Credentials = new NetworkCredential("fb@forzabhora.co.zw", "cxfM7bhG1IDKjGlUjonkfg");
+                                    smtp.Send(msg);
+                                } catch {}
+                            }
+                        </script>

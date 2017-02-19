@@ -1,0 +1,773 @@
+body {
+    background-color: #71767a;
+    height: 100%;
+    width: 100%;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Lato', sans-serif;
+}
+
+:focus {outline:none}
+
+.header {
+    background-image: url(../img/logo-bg.png);
+    background-repeat: repeat-x;
+    position: absolute;
+    top: 20px;
+    z-index: 1;
+    width: 100%;
+}
+
+.top {
+    background: #71767a;
+    width: 100%;
+}
+
+.ellipsis {
+    /*padding: 15px 0 20px;*/
+    margin: 15px auto 20px;
+    max-height: 15px;
+    opacity: 0.5;
+}
+
+.frame {
+    max-width: 1200px;
+}
+
+.prizes .row > div .frame.participation {
+    max-width: 1000px;
+}
+
+.frame.participation h4 {
+    color: #555251;
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.prizes .row > div .frame.participation p {
+    max-width: none;
+    color: #807d7c;
+}
+
+.prizes .row > div .frame.participation p::before {
+    background: none;
+    margin: 0;
+}
+
+.prizes .row > div .frame.participation .column {
+    max-width: 900px;
+}
+
+.prizes .row > div .frame.participation .grey {
+    margin: 10px;
+    padding: 10px;
+    background-color: #dddcdc;
+}
+
+.prizes .row > div .frame.participation .grey p {
+    font-weight: bold;
+    color: #052d51;
+}
+
+.frame > div {
+    margin: 90px 0;
+}
+
+.frame.event > div {
+    margin: 40px 0;
+}
+
+.frame.participation > div {
+    margin: 0;
+    text-align: left;
+}
+
+.frame.participation > div.middle {
+    border: 1px solid #ccc;
+    border-width: 0 1px;
+}
+
+.frame.event > div > div {
+    text-align: left;
+}
+
+.frame > div h4 {
+    color: #052d51;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1em;
+    letter-spacing: 0.1em;
+    margin: 20px 0;
+}
+
+.frame.event div h4 {
+    margin: 0 0 20px 0;
+}
+
+.frame > div p {
+    color: #71767a;
+}
+
+.frame > div p::before {
+    content: " ";
+    width: 40px;
+    height: 5px;
+    background: #aaa8a8;
+    display: block;
+    margin: 0 auto 20px auto;
+}
+
+.frame.event > div p::before {
+    margin: 0 auto 20px 0;
+}
+
+.banner {
+    position: relative;
+    top: 0;
+}
+
+.banner h2 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    margin: 0;
+    padding: 20px 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.contact {
+    padding-top: 55px;
+}
+/*
+.frame a {
+    text-align: left;
+    width: 33%;
+    height: 50px;
+    float: left;
+    padding: 7px 50px;
+    font-family: 'Raleway', sans-serif;
+    color: #000;
+}
+*/
+.frame a strong {
+    font-weight: 500;
+}
+
+.column h1 {
+    font-size: 45px;
+    font-weight: bold;
+    margin-top: 40px;
+}
+
+
+/* We have an exciting promo... */
+
+.promo {
+    background: #fff;
+    width: 100%;
+}
+
+.promo .loaves {
+    padding-top: 10px;
+}
+
+.promo .column {
+    max-width: 780px;
+    margin: 0 auto;
+    color: #636466;
+}
+
+
+/* PRIZES */
+
+.prizes {
+    background: #fff;
+    color: #fff;
+    width: 100%;
+}
+
+.prizes {
+    background: #f7931b;
+    width: 100%;
+}
+
+.bg-white {
+    background: #fff;
+}
+
+.prizes .row > div {
+    padding: 60px 40px;
+}
+
+.prizes .row > div p {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.prizes .row .grand {
+    background-color: #958575;
+}
+
+.prizes .row .empty {
+    display: table;
+    height: 300px;
+}
+
+.prizes .row .empty h3 {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.prizes .row .instant {
+    background-color: #71767a;
+}
+
+.prizes .row .narrow {
+    padding: 20px 40px;
+}
+
+.prizes .row .narrow h2 {
+    margin: 0;
+}
+
+.prizes .row .btn {
+    margin: 10px auto 0;
+    padding: 6px 30px;
+    background-color: transparent;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 2px solid #fff;
+    border-radius: 0;
+    transition: all .5s;
+    letter-spacing: 0.2em;
+}
+
+.prizes .row .btn:hover {
+    background-color: #636466;
+    color: #fff;
+}
+
+p.info {
+    font-size: 16px;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    font-weight: normal;
+    font-size: 22px;
+}
+
+
+/* PRIZES - END */
+
+
+/* HOW TO WIN */
+
+.win {
+    background-color: #fff;
+    color: #636466;
+    width: 100%;
+    padding-bottom: 30px;
+}
+
+.win .column {
+    font-family: Raleway;
+    padding: 0 60px;
+}
+
+.win .column h3 {
+    font-weight: normal;
+    color: #20368b;
+    padding-top: 20px;
+    text-transform: uppercase;
+}
+
+.win .column h3 .star-left {
+    background: url(../img/star.png) center left no-repeat;
+    padding-left: 30px;
+    padding-top: 5px;
+}
+
+.win .column h3 .star-right {
+    background: url(../img/star.png) center right no-repeat;
+    padding-right: 30px;
+    padding-top: 5px;
+}
+
+.win .underline {
+    border-bottom: #20368b 2px solid;
+}
+
+.win .features {
+    width: 100%;
+    padding: 20px 0px;
+}
+
+.win .features div {
+    width: 20%;
+    float: left;
+    padding: 0 30px;
+    border-right: #eee 1px solid;
+}
+
+.win.grand-prize .features div {
+    width: 25%;
+}
+
+.win .features div:last-child {
+    border-right: none;
+}
+
+.win .features h4 {
+    margin: 0;
+    padding: 20px 0 0;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+
+/* HOW TO WIN - END */
+
+
+/* PRIZES ORANGE */
+
+.bgpic {
+    background-image: url(../img/orange_bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.orange {
+    /*background-color: rgba(230, 137, 25, 0.7);*/
+    padding-bottom: 30px;
+}
+
+.orange h2 {
+    color: #fff;
+    font-weight: bold;
+    margin-top: 40px;
+}
+
+.orange .options {
+    max-width: 520px;
+    margin: 0 auto;
+}
+
+.orange .options div {
+    display: table;
+    height: 110px;
+    padding: 0px 10px;
+}
+
+.orange .options div h2,
+.orange .options div h4 {
+    display: table-cell;
+    vertical-align: middle;
+    background-color: #ffd4a0;
+    color: #e28619;
+    border-radius: 60px;
+}
+
+.orange.date {
+    display: table;
+    padding: 15px 0px;
+    width: 100%;
+    color: #fff;
+    font-size: 26px;
+    background-color: rgba(242, 168, 79, 0.5);
+    padding-bottom: 0;
+}
+
+.orange.date p {}
+
+
+/* PRIZES ORANGE - END */
+
+
+/* PRIZES BLUE */
+
+.bgpic.grand-prize {
+    background-image: url(../img/blue_bg.jpg);
+}
+
+.orange .options.blue {
+    max-width: 740px;
+}
+
+.orange .options.blue div h2,
+.orange .options.blue div p {
+    display: table-cell;
+    vertical-align: middle;
+    font-weight: normal;
+    background-color: #8bbcff;
+    color: #1e3284;
+    border-radius: 60px;
+    line-height: 0.5;
+}
+
+.orange .options.blue div h2 small {
+    font-size: 8px;
+    color: #1e3284;
+}
+
+.grand-prize .orange.date {
+    background-color: rgba(64, 92, 172, 0.5);
+}
+
+
+/**
+ * Tabs
+ */
+
+.tabs {
+    display: flex;
+    background-color: #e5e0da;
+    flex-wrap: wrap; // make sure it wraps
+}
+
+.tabs label {
+    order: 1; // Put the labels first
+    display: block;
+    width: 33.33%;
+    padding: 10px 20px;
+    cursor: pointer;
+    background: #052d51;
+    border-radius: #e5e0da solid 1px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: normal;
+    transition: background ease 0.2s;
+}
+
+.tabs .tab {
+    order: 99; // Put the tabs last
+    flex-grow: 1;
+    width: 100%;
+    display: none;
+    padding: 1rem;
+    border-radius: 0 0 5px 5px;
+}
+
+.tabs input[type="text"],
+.tabs textarea,
+.tabs select {
+    width: 100%;
+    border: 0;
+    background-color: #f4f1ef;
+    color: #a0a0a0;
+    padding: 10px 20px;
+    margin: 4px 0;
+}
+
+.tabs select {    
+    background: #f4f1ef url(../img/dropd-icon.png) no-repeat right center;
+    background-size: initial;
+    cursor: pointer;
+    text-transform: uppercase;
+    -moz-appearance: none;
+    -webkit-appearance:none;
+}
+.tabs select::-ms-expand {
+    display: none;
+}
+
+.tabs input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+}
+
+.tabs input[type="radio"]:checked + label {
+    background: #e5e0da;
+    color: #052d51;
+    font-weight: bold;
+}
+
+.tabs input[type="radio"]:checked + label + .tab {
+    display: block;
+}
+
+.tabs .line p {
+    max-width: none !important;
+    text-align: center;
+}
+
+.tabs .line p::before {
+    background: none;
+}
+
+.tabs .line span {
+    color: #807d7c;
+}
+
+.tabs .line.submit {
+    text-align: center;
+}
+
+.tabs .line input[type="submit"] {
+    border: #052d51 solid 2px;
+    background-color: #052d51;
+    color: #fff;
+    width: 33.33%;
+    padding: 10px 20px;
+    text-transform: uppercase;
+}
+
+.tabs .line input[type="submit"]:hover {
+    background-color: #fff;
+    color: #052d51;
+    transition: all 0.4s;
+}
+
+.tabs .line label.radio {
+    cursor: pointer;
+    text-indent: 35px;
+    text-align: left;
+    text-transform: capitalize;
+    font-size: 13px;
+    overflow: visible;
+    display: inline-block;
+    position: relative;
+    margin: 15px 0;
+    padding: 0;
+    width: 100%;
+    background: none;
+    color: #807d7c;
+}
+
+.tabs .line label.radio:before {
+    background: #fff;
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border: #b7b5b4 solid 2px;
+    border-radius: 100%;
+}
+
+.tabs input[type="radio"]:checked + label.radio:before {
+    background: #464646;
+}
+
+.tabs .line label.radio:after {
+    opacity: 0;
+    content: '';
+    position: absolute;
+    width: 0.5em;
+    height: 0.25em;
+    background: transparent;
+    top: 7.5px;
+    left: 4.5px;
+    border: 3px solid #ffffff;
+    border-top: none;
+    border-right: none;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.tabs .line.dropd div {
+    padding-left: 0;
+}
+
+.tabs .line.dropd div:last-child {
+    padding-right: 0;
+}
+
+@media (max-width: 45em) {
+    .tabs .tab,
+    .tabs label {
+        order: initial;
+    }
+    .tabs label {
+        width: 100%;
+        margin-right: 0;
+        margin-top: 0.2rem;
+    }
+}
+
+
+/* FOOTER */
+
+.footer {
+    background-color: #1b3564;
+    min-height: 20px;
+    font-style: italic;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    color: #fff;
+}
+
+.footer .container-fluid {
+    padding: 20px 30px;
+    display: table;
+    width: 100%;
+}
+
+.footer .container-fluid > div {
+    display: table-cell;
+    vertical-align: middle;
+    width: 50%;
+}
+
+.footer .container-fluid div.left {
+    padding-left: 40px;
+}
+
+.footer .container-fluid div.right {
+    padding-right: 40px;
+}
+
+.footer .container-fluid div.right a {
+    width: 100%;
+    height: 100%;
+    text-align: right;
+    text-decoration: none;
+    color: #fff;
+    font-style: normal;
+}
+
+.footer .container-fluid div.right a:hover {
+    color: #71767a;
+}
+
+.footer .social {
+    margin: 50px auto 5px;
+}
+
+.footer a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    float: left;
+    margin: 0 4px;
+}
+
+.footer a.facebook {
+    background: url(../img/facebook.png) no-repeat;
+}
+
+.footer a.twitter {
+    background: url(../img/twitter.png) no-repeat;
+}
+
+.footer a.linkedin {
+    background: url(../img/linkedin.png) no-repeat;
+}
+
+.footer a.facebook:hover {
+    opacity: 0.8;
+}
+
+.footer a.twitter:hover {
+    opacity: 0.8;
+}
+
+.footer a.linkedin:hover {
+    opacity: 0.8;
+}
+
+
+/* FOOTER END */
+
+@media all and (max-width: 1200px) {
+    .header {
+        background-image: none;
+    }
+}
+
+@media all and (max-width: 800px) {
+    .footer {
+        margin-top: 0;
+    }
+}
+
+@media all and (max-width: 768px) {
+    .prizes .row .empty {
+        display: block;
+    }
+    .prizes .row .empty h3 {
+        display: block;
+        vertical-align: middle;
+    }
+    .tabs .line.dropd div {
+        padding: 0;
+    }
+    .orange .options {
+        max-width: 520px;
+        margin: 0 auto;
+    }
+    .orange .options.blue {
+        margin: 0 auto;
+    }
+    .orange .options div {
+        display: block;
+        height: auto;
+        padding: 0px 10px;
+    }
+    .orange .options div h4 {
+        display: block;
+        vertical-align: middle;
+        background-color: #ffd4a0;
+        color: #e28619;
+        padding: 10px;
+        border-radius: 60px;
+    }
+    .orange .options.blue div h2 {
+        display: block;
+        padding: 10px;
+        margin: 10px;
+    }
+    .orange .options.blue div p {
+        display: block;
+        padding: 25px;
+        margin: 10px;
+    }
+    .frame.event > div > div {
+        text-align: center;
+    }
+    .frame.event div h4 {
+        margin: 20px 0;
+    }
+    .frame.event > div p::before {
+        margin: 0 auto 20px auto;
+    }
+    .frame.participation > div {
+        text-align: center;
+    }
+    .frame.participation > div.middle {
+        border: none;
+        padding: 10px 15px;
+    }
+}
+
+@media all and (max-width: 680px) {
+    .win .features {
+        padding-top: 20px;
+    }
+    .win .features div {
+        padding-top: 20px;
+        width: 50% !important;
+        border-right: none;
+    }
+}
+
+@media all and (max-width: 500px) {
+    .win .features div {
+        width: 100% !important;
+    }
+    .footer {}
+}
+
+@media all and (max-width: 320px) {
+    /*.footer a {
+        width: 100% !important;
+        height: 100% !important;
+        padding: 35px;
+    }*/
+}
